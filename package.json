@@ -1,0 +1,32 @@
+{
+  "name": "express-typescript-courses-api",
+  "version": "1.0.0",
+  "description": "A small REST API for managing courses, built with Express 5 and TypeScript",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "nodemon --exec ts-node src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": ["express", "typescript", "rest-api", "crud"],
+  "author": "",
+  "license": "ISC",
+  "engines": { "node": ">=18" },
+  "dependencies": {
+    "debug": "^4.4.3",
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0",
+    "helmet": "^8.1.0",
+    "morgan": "^1.10.1"
+  },
+  "devDependencies": {
+    "@types/debug": "^4.1.12",
+    "@types/express": "^5.0.5",
+    "@types/morgan": "^1.9.10",
+    "@types/node": "^24.10.1",
+    "nodemon": "^3.1.11",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  }
+}
